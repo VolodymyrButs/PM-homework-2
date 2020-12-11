@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  --indent: 15px;
+}
+@media screen and (min-width: 800px) {
+  body {
+    --indent: 30px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vh;
+  min-width: 320px;
+  height: 100vh;
+  min-height: 320px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: var(--indent);
+  box-sizing: border-box;
+}
+
+.topBlock,
+.bottomBlock,
+.middleBlock {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.topBlock,
+.bottomBlock {
+  height: 25%;
+}
+.middleBlock {
+  flex-grow: 1;
+  margin: var(--indent) 0;
+}
+
+.left,
+.right,
+.content {
+  border: 1px solid black;
+  padding: 3px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px darkgrey;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 0 var(--indent);
+}

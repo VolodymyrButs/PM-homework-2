@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  --indent: 15px;
+}
+@media screen and (min-width: 800px) {
+  body {
+    --indent: 30px;
+  }
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  grid-template-rows: 25% 1fr 25%;
+  grid-gap: var(--indent);
+  width: 100%;
+  max-width: 100vh;
+  min-width: 320px;
+  height: 100vh;
+  min-height: 320px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: var(--indent);
+  box-sizing: border-box;
+}
+
+.left,
+.right,
+.content {
+  border: 1px solid black;
+  padding: 3px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px darkgrey;
+  overflow: hidden;
+}
