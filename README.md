@@ -1,2 +1,4 @@
-[Flex](https://volodymyrbuts.github.io/PM-homework-2/)
-[Grid](https://volodymyrbuts.github.io/PM-homework-2/secondPage.html)
+[Flex variant](https://volodymyrbuts.github.io/PM-homework-2/)
+
+
+[Grid variant](https://volodymyrbuts.github.io/PM-homework-2/secondPage.html)
